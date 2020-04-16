@@ -1,4 +1,5 @@
-# Exercícios de Python do Curso em Vídeo
+# Curso Python - Curso em vídeo
+Exercícios resolvidos do curso
 <h3 align="left"> 
     <a href="https://www.youtube.com/user/cursosemvideo">
 Canal Curso em Vídeo
