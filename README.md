@@ -1,6 +1,6 @@
-# Curso Python - Curso em vídeo
-Exercícios resolvidos do curso
-<h3 align="left"> 
+# Curso de Python
+Repositório com os exercícos resolvidos do curso
+<h3> 
     <a href="https://www.youtube.com/user/cursosemvideo">
 Canal Curso em Vídeo
 </h3>
