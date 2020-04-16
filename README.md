@@ -1,5 +1,6 @@
 # Exercícios de Python do Curso em Vídeo
 <h3 align="left"> 
+    <a href="https://www.youtube.com/user/cursosemvideo">
     <img src="https://res.cloudinary.com/mts-cloud/image/upload/v1564075921/curso-em-video/logoCursoemVideo_i32iqd.jpg" width="150px" />
 </h3>
 
