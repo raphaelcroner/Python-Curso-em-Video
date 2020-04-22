@@ -1,0 +1,17 @@
+#---------------------------------------------------------------------#
+                     Exercício #036
+#---------------------------------------------------------------------#
+  Escreva um programa para aprovar o empréstimo bancário para a compra 
+  de uma casa. Pergunte o valor da casa, o salário do comprador e em 
+  quantos anos ele vai pagar. A prestação mensal não poderá exceder 
+  30% do salário ou então o empréstimo será negado.
+#---------------------------------------------------------------------#
+casa = float(input('Valor da Casa: R$'))
+sal = float(input('Salário do Comprador: R$'))
+anos = int(input('Quantos anos para quitar? '))
+prestacao = (casa / (anos*12))
+print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}.'.format(casa, anos, prestacao))
+if(prestacao < sal*30/100 ):
+    print('EMPRÉSTIMO APROVADO')
+else:
+    print('EMPRÉSTIMO NEGADO')
