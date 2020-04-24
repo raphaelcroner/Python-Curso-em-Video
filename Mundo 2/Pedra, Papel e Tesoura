@@ -1,0 +1,54 @@
+#---------------------------------------------------------------------#
+                     Exercício #045
+#---------------------------------------------------------------------#
+  Crie um programa que faça o computador jogar Jokenpô com você.
+#---------------------------------------------------------------------#
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0,2)
+print('''Suas Opções:
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA''')
+jog = int(input('Qual a sua jogada?'))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO')
+sleep(1)
+print('=' *23)
+print('Computador jogou {}'.format(itens[computador]))
+print('Jogador jogou {}'.format(itens[jog]))
+print('='*23)
+
+if computador == 0:
+    if jog ==0:
+        print('EMPATE')
+    elif jog == 1:
+        print('JOGADOR VENCE !')
+    elif jog == 2:
+        print('COMPUTADOR VENCE !')
+    else:
+        print('JOGADA INVÁLIDA !')
+
+if computador == 1:
+    if jog == 0:
+        print('COMPUTADOR VENCE !')
+    elif jog == 1:
+        print('EMPATE')
+    elif jog == 2:
+        print('JOGADOR VENCE !')
+    else:
+        print('JOGADA INVÁLIDA !')
+
+if computador == 2:
+    if jog == 0:
+        print('JOGADOR VENCE !')
+    elif jog == 1:
+        print('COMPUTADOR VENCE !')
+    elif jog == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA !')
