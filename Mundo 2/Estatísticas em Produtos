@@ -1,0 +1,33 @@
+#---------------------------------------------------------------------#
+                     Exercício #070
+#---------------------------------------------------------------------#
+  Crie um programa que leia o nome e o preço de vários produtos. 
+  O programa deverá perguntar se o usuário vai continuar ou não. 
+  No final, mostre:
+    A) qual é o total gasto na compra.
+    B) quantos produtos custam mais de R$1000.
+    C) qual é o nome do produto mais barato. 
+#---------------------------------------------------------------------#
+total = cont = 0
+while True:
+    produto = str(input('Nome do Produto: '))
+    preço = float(input('Preço: R$'))
+    total += preço
+    if preço > 1000:
+        cont += 1
+    if total == preço:
+        menor = preço
+        nome = produto
+    if preço < menor:
+        menor = preço
+        nome = produto
+    escolha = ' '
+    while escolha not in 'sn':
+        escolha = str(input('Quer continuar? [S/N]')).lower()
+    if escolha == 'n':
+        break
+print('-'*10, 'FIM DO PROGRAMA' '-'*30)
+print(f'''O total da compra foi R${total:.2f}
+Temos {cont} produtos custando mais de R$1000.00
+O produto mais barato foi {nome} que custa R${menor:.2f}
+''')
