@@ -1,0 +1,15 @@
+#---------------------------------------------------------------------#
+                     Exercício #060
+#---------------------------------------------------------------------#
+  Faça um programa que leia um número qualquer e mostre o seu fatorial.
+#---------------------------------------------------------------------#
+from math import factorial
+n = int(input('Digite um número para calcular seu fatorial: '))
+c = n
+print(f'Calculando {n}! = ', end = '')
+while c > 0:
+    print(f'{c}', end = '')
+    print(' x ' if c > 1 else ' = ', end = '')
+    c -= 1
+f = factorial(n)
+print(f'{f}')
